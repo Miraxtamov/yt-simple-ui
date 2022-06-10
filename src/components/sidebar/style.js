@@ -3,7 +3,6 @@ import styled from "styled-components";
 export const Container = styled.div`
 	position: sticky;
 	top: 0;
-	left: 0;
 	width: 240px;
 	height: 100vh;
 	background-color: #212121;
@@ -17,12 +16,14 @@ export const Container = styled.div`
 		border-radius: 8px;
 	}
 
-	::-webkit-scrollbar-thumb {
-		height: 56px;
-		border-radius: 8px;
-		border: 4px solid transparent;
-		background-clip: content-box;
-		background-color: #888;
+	&:hover {
+		::-webkit-scrollbar-thumb {
+			height: 56px;
+			border-radius: 8px;
+			border: 4px solid transparent;
+			background-clip: content-box;
+			background-color: #888;
+		}
 	}
 `;
 
@@ -80,9 +81,8 @@ export const SidebarLink = styled.a`
 `;
 
 export const SidebarIcon = styled.img`
-	width: ${(props) => (props.alignRight ? "10px" : "16px")};
-	height: ${(props) => (props.alignRight ? "10px" : "16px")};
-	margin-left: ${(props) => (props.alignRight ? "auto" : {})};
+	width: 16px;
+	height: 16px;
 `;
 
 export const SidebarLiText = styled.div`
@@ -105,7 +105,8 @@ export const SidebarTitle = styled.div`
 	padding-left: 27px;
 `;
 
-export const SidebarLive = styled.img`
-	/* width: auto;
-	height: auto; */
+export const SidebarLiveImg = styled.img`
+	width: ${(props) => (props.videoUploadWidth ? "5px" : "13px")};
+	height: auto;
+	margin-left: auto;
 `;

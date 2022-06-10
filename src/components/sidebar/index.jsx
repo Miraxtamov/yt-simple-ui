@@ -31,7 +31,7 @@ import {
 	SidebarLiText,
 	SidebarTitle,
 	SidebarUl,
-	
+	SidebarLiveImg,
 } from "./style";
 
 function Sidebar() {
@@ -110,15 +110,15 @@ function Sidebar() {
 						<SidebarLink title="The Game" href="#">
 							<SidebarIcon src={Avatar1} alt="The Game" />
 							<SidebarLiText>The Game</SidebarLiText>
-							<SidebarIcon alignRight src={SidebarLive} alt="The Game" />
+							<SidebarLiveImg  src={SidebarLive} alt="The Game" />
 						</SidebarLink>
 					</SidebarLi>
 					<SidebarLi>
 						<SidebarLink title="Dev Ed" href="#">
 							<SidebarIcon src={Avatar2} alt="Dev Ed" />
 							<SidebarLiText>Dev Ed</SidebarLiText>
-							<SidebarIcon
-								alignRight
+							<SidebarLiveImg
+								videoUploadWidth
 								src={SidebarVideoUploaded}
 								alt="The Game"
 							/>
@@ -128,8 +128,8 @@ function Sidebar() {
 						<SidebarLink title="Dani Krossing" href="#">
 							<SidebarIcon src={Avatar3} alt="Dani Krossing" />
 							<SidebarLiText>Dani Krossing</SidebarLiText>
-							<SidebarIcon
-								alignRight
+							<SidebarLiveImg
+								videoUploadWidth
 								src={SidebarVideoUploaded}
 								alt="The Game"
 							/>
@@ -139,8 +139,8 @@ function Sidebar() {
 						<SidebarLink title="CodingNepal" href="#">
 							<SidebarIcon src={Avatar4} alt="CodingNepal" />
 							<SidebarLiText>CodingNepal</SidebarLiText>
-							<SidebarIcon
-								alignRight
+							<SidebarLiveImg
+								videoUploadWidth
 								src={SidebarVideoUploaded}
 								alt="The Game"
 							/>
@@ -150,7 +150,7 @@ function Sidebar() {
 						<SidebarLink title="Bedimcode" href="#">
 							<SidebarIcon src={Avatar5} alt="Bedimcode" />
 							<SidebarLiText>Bedimcode</SidebarLiText>
-							<SidebarIcon alignRight src={SidebarLive} alt="The Game" />
+							<SidebarLiveImg src={SidebarLive} alt="The Game" />
 						</SidebarLink>
 					</SidebarLi>
 					<SidebarLi>
