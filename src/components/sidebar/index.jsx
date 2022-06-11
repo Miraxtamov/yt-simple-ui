@@ -110,7 +110,7 @@ function Sidebar() {
 						<SidebarLink title="The Game" href="#">
 							<SidebarIcon src={Avatar1} alt="The Game" />
 							<SidebarLiText>The Game</SidebarLiText>
-							<SidebarLiveImg  src={SidebarLive} alt="The Game" />
+							<SidebarLiveImg src={SidebarLive} alt="The Game" />
 						</SidebarLink>
 					</SidebarLi>
 					<SidebarLi>

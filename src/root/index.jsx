@@ -2,17 +2,19 @@ import Body from "../components/body";
 import Category from "../components/category";
 import Navbar from "../components/navbar";
 import Sidebar from "../components/sidebar";
-import "./style"
-import { Container } from "./style";
+import "./style";
+import { Container, Wrapper } from "./style";
 
-function Root () {
-  return (
+function Root() {
+	return (
 		<div className="root">
 			<Container>
 				<Sidebar />
-				<Navbar />
-				<Category />
-				<Body />
+				<Wrapper>
+					<Navbar />
+					{/* <Category /> */}
+					<Body />
+				</Wrapper>
 			</Container>
 		</div>
 	);
