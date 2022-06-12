@@ -1,5 +1,4 @@
 import Body from "../components/body";
-import Category from "../components/category";
 import Navbar from "../components/navbar";
 import Sidebar from "../components/sidebar";
 import "./style";
@@ -12,7 +11,6 @@ function Root() {
 				<Sidebar />
 				<Wrapper>
 					<Navbar />
-					{/* <Category /> */}
 					<Body />
 				</Wrapper>
 			</Container>

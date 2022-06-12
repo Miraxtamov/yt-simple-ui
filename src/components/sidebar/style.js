@@ -3,7 +3,7 @@ import styled from "styled-components";
 export const Container = styled.div`
 	position: sticky;
 	top: 0;
-	width: 240px;
+	width: 295px;
 	height: 100vh;
 	background-color: #212121;
 	overflow: auto;
