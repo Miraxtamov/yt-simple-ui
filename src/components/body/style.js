@@ -1,9 +1,5 @@
 import styled from "styled-components";
 
-export const BodyContainer = styled.div`
-	width: 100%;
-	background-color: #181818;
-`;
 export const Container = styled.div`
 	padding: 25px 24px;
 	margin-left: auto;

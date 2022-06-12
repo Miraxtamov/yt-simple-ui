@@ -1,4 +1,5 @@
-import React from "react";
+import React, { useContext, useState } from "react";
+import { Info } from "../../context";
 
 import InputSearch from "../../assets/icon/search-icon.svg";
 import VideoUpload from "../../assets/icon/video-upload-icon.svg";
@@ -17,13 +18,35 @@ import {
 	NavbarRightContainer,
 	NavbarRightImg,
 } from "./style";
+import { data } from "../../mock";
 
 function Navbar() {
+	const [cardData, setCardData] = useContext(Info);
+	const [names, setNames] = useState("");
+
+	const inputChange = (e) => {
+		setNames(e.target.value);
+	};
+
+	const key = (e) => {
+		if (e.key === "Enter") {
+			const newData = data.filter((value) =>
+				value.title.toLocaleLowerCase().includes(names.toLocaleLowerCase())
+			);
+			setCardData(newData);
+		}
+	};
+
 	return (
 		<Container>
 			<NavbarContainer>
 				<NavbarInputContainer>
-					<NavbarInput placeholder="Search" type={"search"} />
+					<NavbarInput
+						onKeyDown={key}
+						onChange={inputChange}
+						placeholder="Search"
+						type={"search"}
+					/>
 					<NavbarInputButton>
 						<NavbarInputButtonSearchIcon src={InputSearch} />
 					</NavbarInputButton>

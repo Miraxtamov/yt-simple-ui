@@ -1,4 +1,5 @@
-import React from "react";
+import React, {useContext} from "react";
+import { Info } from "../../context";
 
 import {
 	AvatarChannel,
@@ -14,17 +15,15 @@ import {
 	Seen,
 	Dot,
 	WhenSet,
-	BodyContainer,
 } from "./style";
 
-import { data } from "../../mock";
 
 function Body() {
+  const [cardData, setCardData] = useContext(Info);
 	return (
-		<BodyContainer>
 			<Container>
 				<VideosContainer>
-					{data.map((value) => {
+					{cardData.map((value) => {
 						return (
 							<VideoCard>
 								<VideoPrevious src={value.previousImg} alt="Video Previous" />
@@ -48,7 +47,6 @@ function Body() {
 					})}
 				</VideosContainer>
 			</Container>
-		</BodyContainer>
 	);
 }
 
