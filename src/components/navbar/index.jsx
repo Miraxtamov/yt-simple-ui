@@ -4,7 +4,7 @@ import InputSearch from "../../assets/icon/search-icon.svg";
 import VideoUpload from "../../assets/icon/video-upload-icon.svg";
 import Apps from "../../assets/icon/apps-icon.svg";
 import Notification from "../../assets/icon/notification.svg";
-import ProfileImg from "../../assets/img/profile-photo.png";
+import ProfileImg from "../../assets/img/profile-photo.jpg";
 import {
 	CategoryBtn,
 	CategoryContainer,
@@ -32,7 +32,7 @@ function Navbar() {
 					<NavbarRightImg src={VideoUpload} />
 					<NavbarRightImg src={Apps} />
 					<NavbarRightImg src={Notification} />
-					<NavbarRightImg width={"32px"} height={"32px"} src={ProfileImg} />
+					<NavbarRightImg profileImg width={"32px"} height={"32px"} src={ProfileImg} />
 				</NavbarRightContainer>
 			</NavbarContainer>
 			<CategoryContainer>

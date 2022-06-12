@@ -33,11 +33,12 @@ export const NavbarInput = styled.input`
 	font-size: 16px;
 	line-height: 24px;
 	padding: 2px 6px;
-	box-shadow: inset 0 1px 2px hsla(0, 0%, 0%, 0);
+	box-shadow: inset 0 1px 2px  hsla(0, 0%, 0%, 0);
+	border: 1px solid transparent;
 
 	&:focus {
 		border: 1.1px solid #1c62b9;
-  box-shadow: inset 0 1px 2px rgba(0,0,0,.4);la(0, 0%, 0%, 0), 0 0 0 1px hsla(0, 0%, 0%, 0.12);
+  	box-shadow: inset 0 1px 2px rgba(0,0,0,.4);la(0, 0%, 0%, 0), 0 0 0 1px hsla(0, 0%, 0%, 0.12);
 	}
 `;
 
@@ -61,6 +62,7 @@ export const NavbarRightContainer = styled.div`
 export const NavbarRightImg = styled.img`
 	margin-right: 26px;
 	cursor: pointer;
+	border-radius: ${props => props.profileImg ? "50%" : "0"};
 `;
 
 // Category
