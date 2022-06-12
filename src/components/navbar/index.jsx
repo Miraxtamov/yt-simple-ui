@@ -1,20 +1,21 @@
 import React from "react";
 
 import InputSearch from "../../assets/icon/search-icon.svg";
-import VideoUpload from "../../assets/icon/video-upload-icon.svg"
-import Apps from "../../assets/icon/apps-icon.svg"
-import Notification from "../../assets/icon/notification.svg"
-import ProfileImg from "../../assets/img/profile-photo.png"
+import VideoUpload from "../../assets/icon/video-upload-icon.svg";
+import Apps from "../../assets/icon/apps-icon.svg";
+import Notification from "../../assets/icon/notification.svg";
+import ProfileImg from "../../assets/img/profile-photo.png";
 import {
+	CategoryBtn,
+	CategoryContainer,
 	Container,
 	NavbarContainer,
 	NavbarInput,
 	NavbarInputButton,
 	NavbarInputButtonSearchIcon,
 	NavbarInputContainer,
-	NavbarLine,
 	NavbarRightContainer,
-	NavbarRightImg
+	NavbarRightImg,
 } from "./style";
 
 function Navbar() {
@@ -28,13 +29,25 @@ function Navbar() {
 					</NavbarInputButton>
 				</NavbarInputContainer>
 				<NavbarRightContainer>
-					<NavbarRightImg src={VideoUpload}/>
-					<NavbarRightImg src={Apps}/>
-					<NavbarRightImg src={Notification}/>
-					<NavbarRightImg width={"32px"} height={"32px"} src={ProfileImg}/>
+					<NavbarRightImg src={VideoUpload} />
+					<NavbarRightImg src={Apps} />
+					<NavbarRightImg src={Notification} />
+					<NavbarRightImg width={"32px"} height={"32px"} src={ProfileImg} />
 				</NavbarRightContainer>
-				<NavbarLine/>
 			</NavbarContainer>
+			<CategoryContainer>
+				<CategoryBtn>All</CategoryBtn>
+				<CategoryBtn>JavaScript</CategoryBtn>
+				<CategoryBtn>Football</CategoryBtn>
+				<CategoryBtn>Cartoons</CategoryBtn>
+				<CategoryBtn>Live</CategoryBtn>
+				<CategoryBtn>Cinema</CategoryBtn>
+				<CategoryBtn>Mix</CategoryBtn>
+				<CategoryBtn>Music</CategoryBtn>
+				<CategoryBtn>Sheikh</CategoryBtn>
+				<CategoryBtn>Watched</CategoryBtn>
+				<CategoryBtn>New to you</CategoryBtn>
+			</CategoryContainer>
 		</Container>
 	);
 }

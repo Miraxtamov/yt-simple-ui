@@ -34,7 +34,7 @@ export const LogoBar = styled.div`
 	z-index: 1;
 	display: flex;
 	align-items: center;
-	padding-top: 16px;
+	padding-top: 20px;
 	padding-bottom: 16px;
 `;
 
@@ -56,11 +56,18 @@ export const SidebarContainer = styled.div`
 export const SidebarUl = styled.ul`
 	display: flex;
 	flex-direction: column;
+	border-bottom: 1px solid rgba(99, 99, 99, 0.5);
+
+	:last-of-type {
+		border-bottom: none;
+	}
 `;
 
 export const SidebarLi = styled.li`
 	margin-top: ${(props) => (props.firstLi ? "9px" : "0")};
 	margin-top: ${(props) => (props.subsMT ? "8px" : {})};
+	margin-bottom: ${(props) => (props.mBB ? "12px" : {})};
+	margin-top: ${(props) => (props.mTT ? "12px" : {})};
 `;
 
 export const SidebarLink = styled.a`
@@ -91,18 +98,13 @@ export const SidebarLiText = styled.div`
 	margin-top: 2px;
 `;
 
-export const SidebarLine = styled.hr`
-	border: 1px solid rgba(255, 255, 255, 0.2);
-	margin-top: 12px;
-	margin-bottom: ${(props) => (props.mbT ? "8px" : "22px")};
-`;
-
 export const SidebarTitle = styled.div`
 	color: rgba(255, 255, 255, 0.6);
 	font-weight: 500;
 	font-size: 14px;
 	line-height: 16px;
 	padding-left: 27px;
+	margin-top: 8px;
 `;
 
 export const SidebarLiveImg = styled.img`

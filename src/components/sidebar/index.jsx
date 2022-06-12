@@ -26,7 +26,6 @@ import {
 	SidebarHome,
 	SidebarIcon,
 	SidebarLi,
-	SidebarLine,
 	SidebarLink,
 	SidebarLiText,
 	SidebarTitle,
@@ -57,16 +56,15 @@ function Sidebar() {
 							<SidebarLiText>Explore</SidebarLiText>
 						</SidebarLink>
 					</SidebarLi>
-					<SidebarLi>
+					<SidebarLi mBB>
 						<SidebarLink title="Subscriptions" href="#">
 							<SidebarIcon src={SidebarSubscriptionsIcon} alt="Subscriptions" />
 							<SidebarLiText>Subscriptions</SidebarLiText>
 						</SidebarLink>
 					</SidebarLi>
 				</SidebarUl>
-				<SidebarLine />
 				<SidebarUl>
-					<SidebarLi>
+					<SidebarLi mTT>
 						<SidebarLink title="Library" href="#">
 							<SidebarIcon src={SidebarLibraryIcon} alt="Library" />
 							<SidebarLiText>Library</SidebarLiText>
@@ -96,14 +94,13 @@ function Sidebar() {
 							<SidebarLiText>Liked Videos</SidebarLiText>
 						</SidebarLink>
 					</SidebarLi>
-					<SidebarLi>
+					<SidebarLi mBB>
 						<SidebarLink title="Show more" href="#">
 							<SidebarIcon src={SidebarArrowIcon} alt="Show more" />
 							<SidebarLiText>Show more</SidebarLiText>
 						</SidebarLink>
 					</SidebarLi>
 				</SidebarUl>
-				<SidebarLine mbT />
 				<SidebarTitle>SUBSCRIPTIONS</SidebarTitle>
 				<SidebarUl>
 					<SidebarLi subsMT>
@@ -153,14 +150,13 @@ function Sidebar() {
 							<SidebarLiveImg src={SidebarLive} alt="The Game" />
 						</SidebarLink>
 					</SidebarLi>
-					<SidebarLi>
+					<SidebarLi mBB>
 						<SidebarLink title="Show more" href="#">
 							<SidebarIcon src={SidebarArrowIcon} alt="Show more" />
 							<SidebarLiText>Show more</SidebarLiText>
 						</SidebarLink>
 					</SidebarLi>
 				</SidebarUl>
-				<SidebarLine mbT />
 				<SidebarTitle>MORE FROM YOUTUBE</SidebarTitle>
 				<SidebarUl>
 					<SidebarLi>

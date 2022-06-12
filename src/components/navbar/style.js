@@ -3,19 +3,29 @@ import styled from "styled-components";
 export const Container = styled.div`
 	position: sticky;
 	top: 0;
-	background-color: #212121;
+	background-color: #202020;
 	padding-top: 12px;
-	padding-bottom: 12px;
 `;
 
 export const NavbarContainer = styled.div`
 	display: flex;
 	align-items: center;
+	padding-bottom: 12px;
+	border-bottom: 1px solid rgba(99, 99, 99, 0.5);
+`;
+
+export const NavbarInputContainer = styled.div`
+	display: flex;
+	align-items: center;
+	border: 1px solid hsl(0, 0%, 18.82%);
+	margin-left: auto;
+	border-radius: 2px 2px;
+	border-right: none;
 `;
 
 export const NavbarInput = styled.input`
 	width: 574px;
-	height: 33px;
+	height: 37px;
 	border: none;
 	outline: none;
 	background-color: #121212;
@@ -23,9 +33,6 @@ export const NavbarInput = styled.input`
 	font-size: 16px;
 	line-height: 24px;
 	padding: 2px 6px;
-	border: 1px solid hsl(0, 0%, 18.82%);
-	border-radius: 2px 0;
-	border-right: none;
 	box-shadow: inset 0 1px 2px hsla(0, 0%, 0%, 0);
 
 	&:focus {
@@ -34,16 +41,10 @@ export const NavbarInput = styled.input`
 	}
 `;
 
-export const NavbarInputContainer = styled.div`
-	display: flex;
-	align-items: center;
-	margin-left: auto;
-`;
-
 export const NavbarInputButton = styled.button`
 	border: none;
 	background: rgba(255, 255, 255, 0.2);
-	padding: 6px 24px;
+	padding: 8px 24px;
 	cursor: pointer;
 	border-radius: 0px 2px 2px 0px;
 `;
@@ -62,6 +63,40 @@ export const NavbarRightImg = styled.img`
 	cursor: pointer;
 `;
 
-export const NavbarLine = styled.hr`
-	border: 1px solid rgba(255, 255, 255, 0.2);
+// Category
+export const CategoryContainer = styled.div`
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	margin: 0 auto;
+	padding-top: 13px;
+	padding-bottom: 13px;
+	border-bottom: 1px solid rgba(99, 99, 99, 0.5);
+`;
+
+export const CategoryBtn = styled.button`
+	font-weight: 500;
+	font-size: 14px;
+	line-height: 20px;
+	padding: 5px 12px;
+	color: #ffffff;
+	background-color: rgba(255, 255, 255, 0.1);
+	border: 1px solid rgba(255, 255, 255, 0.1);
+	border-radius: 30px;
+	cursor: pointer;
+	margin-left: 12px;
+	transition: background-color 0.5s cubic-bezier(0.05, 0, 0, 1);
+
+	:first-of-type {
+		margin-left: 0;
+	}
+
+	&:hover {
+		background-color: rgba(255, 255, 255, 0.2);
+	}
+
+	&:focus {
+		background: rgba(255, 255, 255);
+		color: #212121;
+	}
 `;
