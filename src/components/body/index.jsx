@@ -34,7 +34,7 @@ function Body() {
 										alt="Channel Avatar"
 									/>
 									<VideoTextContainer>
-											<VideoTitle>{value.title}</VideoTitle>
+										<VideoTitle>{value.title}</VideoTitle>
 										<VideoChannelName>{value.channelName}</VideoChannelName>
 										<SeenDotWhenSet>
 											<Seen>{value.postSeen}</Seen>

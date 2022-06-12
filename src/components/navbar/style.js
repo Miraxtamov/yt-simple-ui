@@ -62,7 +62,7 @@ export const NavbarRightContainer = styled.div`
 export const NavbarRightImg = styled.img`
 	margin-right: 26px;
 	cursor: pointer;
-	border-radius: ${props => props.profileImg ? "50%" : "0"};
+	border-radius: ${(props) => (props.profileImg ? "50%" : "0")};
 `;
 
 // Category

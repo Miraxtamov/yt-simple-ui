@@ -32,7 +32,12 @@ function Navbar() {
 					<NavbarRightImg src={VideoUpload} />
 					<NavbarRightImg src={Apps} />
 					<NavbarRightImg src={Notification} />
-					<NavbarRightImg profileImg width={"32px"} height={"32px"} src={ProfileImg} />
+					<NavbarRightImg
+						profileImg
+						width={"32px"}
+						height={"32px"}
+						src={ProfileImg}
+					/>
 				</NavbarRightContainer>
 			</NavbarContainer>
 			<CategoryContainer>

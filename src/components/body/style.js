@@ -21,12 +21,12 @@ export const VideoCard = styled.div`
 	display: flex;
 	cursor: pointer;
 	flex-direction: column;
-  max-width: 360px;
-  min-height: 100%;
+	max-width: 360px;
+	min-height: 100%;
 `;
 
 export const VideoPrevious = styled.img`
-object-fit: cover;
+	object-fit: cover;
 	width: 100%;
 	height: 142px;
 `;
@@ -40,7 +40,7 @@ export const VideoPhotoTextContainer = styled.div`
 export const AvatarChannel = styled.img`
 	width: 36px;
 	height: 36px;
-  border-radius: 50%;
+	border-radius: 50%;
 `;
 
 export const VideoTextContainer = styled.div`
@@ -56,7 +56,6 @@ export const VideoTitle = styled.h4`
 	color: #ffffff;
 	margin-bottom: 4px;
 `;
-
 
 export const VideoChannelName = styled.p`
 	color: rgba(255, 255, 255, 0.6);
